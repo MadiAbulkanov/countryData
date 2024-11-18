@@ -1,0 +1,6 @@
+li {
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 3px;
+    font-size: 17px;
+}

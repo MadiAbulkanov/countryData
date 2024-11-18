@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    color: #bdaada;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: row;
+}
+
+.countries_list {
+    width: 330px;
+    background-color: #452772;
+    max-height: 700px;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-color:  #554075 #452772;
+}
+
+.country_card {
+    width: 700px;
+    max-height: 700px;
+    background-color: #452772;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+    scrollbar-color:  #554075 #452772;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+}

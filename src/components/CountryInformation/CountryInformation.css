@@ -1,0 +1,32 @@
+.information_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdaada;
+    padding: 20px;
+    margin: 10px;
+}
+
+.basic_information {
+    width: 60%;
+}
+
+.country_name {
+    font-size: 28px;
+}
+
+.country_flag {
+    width: 180px;
+    height: 130px;
+}
+
+.additional_information {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.country_border {
+    padding-left: 10px;
+    cursor:auto;
+    text-decoration: none;
+}
