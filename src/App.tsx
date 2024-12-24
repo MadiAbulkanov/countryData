@@ -54,7 +54,7 @@ function App() {
         </ul>
         <div className="country_card">
         {value 
-          ? (<h1 className="title">Выберите страну</h1>) 
+          ? (<h1 className="title">Select country</h1>) 
           : (country.map((value, index) => {
               return (
                 <CountryInformation
