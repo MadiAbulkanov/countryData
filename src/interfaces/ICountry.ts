@@ -11,6 +11,9 @@ export interface ICountryInformation {
     "capital": string;
     "region": string;
     "population": string;
-    "flags": number[];
-    "borders": string;
+    "flags": {
+        png: string;
+        svg: string;
+    };
+    "borders": string[];
 }

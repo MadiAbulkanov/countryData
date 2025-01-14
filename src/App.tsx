@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const getCountries = async () => {
       const { data, error } = await fetchData<ICountry[]>(
-        "https://restcountries.com/v3/all"
+        "https://restcountries.com/v3.1/all"
       );
 
       if (data) {
@@ -30,7 +30,7 @@ function App() {
 
   const getCountry = async (name: string) => {
     const { data, error } = await fetchData<ICountryInformation[]>(
-      `https://restcountries.com/v3/name/${name}`
+      `https://restcountries.com/v3.1/name/${name}`
     );
 
     if (data) {
@@ -63,8 +63,8 @@ function App() {
                   capital={value.capital}
                   region={value.region}
                   population={value.population}
-                  flags={value.flags[0].toString()}
-                  borders={[value.borders]}
+                  flags={value.flags.png || value.flags.svg}
+                  borders={value.borders || []}
                 />
               );
             })
